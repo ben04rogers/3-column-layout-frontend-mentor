@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .cars {
+  max-width: 1100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 500px;
+}
+
+@media screen and (max-width: 780px) {
+  .container .cars {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+  }
+}
+
+.container .cars .cars-column {
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .cars .cars-column > * {
+  margin: 10px 0;
+}
+
+.container .cars .cars-column .column-image {
+  height: 50px;
+}
+
+.container .cars .cars-column .column-title {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  font-size: 2.75rem;
+  color: white;
+}
+
+.container .cars .cars-column .column-text {
+  font-family: "Lexend Deca", sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.75;
+}
+
+.container .cars .cars-column .button {
+  padding: 15px 30px;
+  border-radius: 100px;
+}
+
+.container .cars .cars-column .button:hover {
+  cursor: pointer;
+}
+
+.container .cars .cars-column .button-orange {
+  border: 1px solid darkorange;
+  color: darkorange;
+  font-family: "Lexend Deca", sans-serif;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+
+.container .cars .cars-column .button-cyan {
+  border: 1px solid darkcyan;
+  color: darkcyan;
+  font-family: "Lexend Deca", sans-serif;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+
+.container .cars .cars-column .button-dark-cyan {
+  border: 1px solid darkslategrey;
+  color: darkslategrey;
+  font-family: "Lexend Deca", sans-serif;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+
+.container .cars .column--orange {
+  background-color: #e38826;
+}
+
+.container .cars .column--cyan {
+  background-color: #006970;
+}
+
+.container .cars .column--dark-cyan {
+  background-color: #004241;
+}
+/*# sourceMappingURL=styles.css.map */
